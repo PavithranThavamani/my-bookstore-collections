@@ -15,11 +15,7 @@ function Home() {
           sx={{ marginTop: "50px", marginLeft: "30px", color: "blue" }}
           variant="h4"
         >
-          {/* <pre>
-            Welcome to Comic BookStore,
-            <pre>Find your fanatsy Books, add your books,</pre>
-            update them, not like it ? delete them.
-          </pre> */}
+          Welcome to Comic BookStore,
         </Typography>
         <Button
           LinkComponent={Link}
