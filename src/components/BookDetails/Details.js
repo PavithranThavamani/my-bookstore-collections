@@ -21,7 +21,7 @@ function Details() {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`https://my-bookstore-collections.herokuapp.com/${id}`)
+        .get(`https://my-bookstore-collections.herokuapp.com/books/${id}`)
         .then((res) => res.data)
         .then((data) => setInput(data.book));
     };
@@ -42,7 +42,7 @@ function Details() {
 
   const sendRequest = async () => {
     await axios
-      .put(`https://my-bookstore-collections.herokuapp.com/${id}`, {
+      .put(`https://my-bookstore-collections.herokuapp.com/books/${id}`, {
         name: String(input.name),
         author: String(input.author),
         description: String(input.description),

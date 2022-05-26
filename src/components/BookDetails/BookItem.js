@@ -10,9 +10,9 @@ function BookItem(props) {
 
   const deleteHandler = async () => {
     await axios
-      .delete(`https://my-bookstore-collections.herokuapp.com/${_id}`)
+      .delete(`https://my-bookstore-collections.herokuapp.com/books/${_id}`)
       .then((res) => res.data)
-      .then(() => history("/"))
+      .then(() => history.push("/"))
       .then(() => history("/books"));
   };
 
