@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 function Details() {
-  const [input, setInput] = useState({});
+  const [input, setInput] = useState();
   const [checked, setChecked] = useState(false);
 
   const id = useParams().id;

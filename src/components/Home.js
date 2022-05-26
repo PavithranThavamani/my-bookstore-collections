@@ -5,13 +5,21 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <Box display={"flex"} flexDirection="column" alignItems={"center"}>
+      <Box
+        display={"flex"}
+        flexDirection="column"
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
         <Typography
           sx={{ marginTop: "50px", marginLeft: "30px", color: "blue" }}
           variant="h4"
         >
-          Welcome to Comic BookStore, Find your fanatsy Books, add your books,
-          update them, not like it ? delete them.
+          {/* <pre>
+            Welcome to Comic BookStore,
+            <pre>Find your fanatsy Books, add your books,</pre>
+            update them, not like it ? delete them.
+          </pre> */}
         </Typography>
         <Button
           LinkComponent={Link}
