@@ -32,13 +32,13 @@ function AddBook() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(input, checked);
+    // console.log(input, checked);
     sendRequest().then(() => history("/books"));
   };
 
   const sendRequest = async () => {
     await axios
-      .post("https://my-bookstore-collections.herokuapp.com//books", {
+      .post("https://my-bookstore-collections.herokuapp.com/books", {
         name: String(input.name),
         author: String(input.author),
         description: String(input.description),
